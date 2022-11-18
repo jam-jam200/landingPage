@@ -1,7 +1,30 @@
-import "./App.css";
+import React from "react";
+import { CTA, Brand, NavBar } from "./components";
+import {
+  Blog,
+  Footer,
+  Possibility,
+  Features,
+  WhatGPT3,
+  Header,
+} from "./containers";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <div className="gradient__bg">
+        <NavBar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Possibility />
+      <CTA />
+      <Blog />
+      <CTA />
+    </div>
+  );
 }
 
 export default App;

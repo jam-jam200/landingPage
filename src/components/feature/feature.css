@@ -56,15 +56,3 @@
     margin: 1rem 0rem;
   }
 }
-
-@media screen and (max-width: 550px) {
-  .gpt3__features-container__feature {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .gpt3__features-container__feature {
-    display: block;
-  }
-}

@@ -8,11 +8,11 @@ const featuresData = [
     text: "Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now.",
   },
   {
-    title: "Become the tended active",
+    title: "Improving end distrusts instantly",
     text: "Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now.",
   },
   {
-    title: "Message or am nothing",
+    title: "Improving end distrusts instantly",
     text: "Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now.",
   },
 ];

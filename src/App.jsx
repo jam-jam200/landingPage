@@ -23,6 +23,7 @@ function App() {
       <Possibility />
       <CTA />
       <Blog />
+      <Footer />
     </div>
   );
 }

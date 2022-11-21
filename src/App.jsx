@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { CTA, Brand, NavBar, NavBar } from "./components";
+import { CTA, Brand, NavBar } from "./components";
 import {
   Blog,
   Footer,

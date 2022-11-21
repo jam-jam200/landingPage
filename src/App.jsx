@@ -1,5 +1,5 @@
-import React from "react";
-import { CTA, Brand, NavBar } from "./components";
+import React, { Suspense, lazy } from "react";
+import { CTA, Brand, NavBar, NavBar } from "./components";
 import {
   Blog,
   Footer,
@@ -10,19 +10,37 @@ import {
 } from "./containers";
 import "./App.css";
 
+const Hero = lazy(() => <Header />);
+const BrandSection = lazy(() => <Brand />);
+
 function App() {
   return (
     <div className="App">
       <div className="gradient__bg">
         <NavBar />
-        <Header />
+        <Suspense
+          className="loading"
+          fallback={<div>Please Wait...Hero Page is Loading</div>}
+        >
+          <Hero />
+        </Suspense>
       </div>
-      <Brand />
+      <Suspense
+        className="loading"
+        fallback={<div>Please Wait...Section is Loading</div>}
+      >
+        <BrandSection />
+      </Suspense>
       <WhatGPT3 />
       <Features />
       <Possibility />
       <CTA />
-      <Blog />
+      <Suspense
+        className="loading"
+        fallback={<div>Please Wait...Blog is Loading</div>}
+      >
+        <Blog />
+      </Suspense>
       <Footer />
     </div>
   );
